@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.lb-wrapper {
+  display: none;
+}
+
+.lb-wrapper.open {
+  display: block;
+}
+.lb-wrapper.mask{
+  position:absolute;
+  background-color: rgba(0,0,0,0.6);
+}
