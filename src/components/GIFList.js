@@ -1,7 +1,6 @@
 import GIF from "./GIF";
 
 const GIFList = (props) => {
-    console.log(props.gifList);
     return (
         <div className="container list">
             <div className="row">
