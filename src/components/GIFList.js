@@ -1,15 +1,18 @@
 import GIF from "./GIF";
 
 const GIFList = (props) => {
-
+    console.log(props.gifList);
     return (
         <div className="container list">
             <div className="row">
-                <div className="col d-flex">
+                <div className="col d-flex result-wrapper">
                     {props.gifList.map(
                         (gif) => {
-                            // console.log(gif);
-                            return <GIF item={gif} openLB={props.openLB} />
+                            return (
+                                <div key={gif.id} className="gif-container">
+                                    <GIF item={gif} openLB={props.openLB} style={{ maxHeight: "300px" }}/>
+                                </div>
+                            )
                         }
                     )}
                 </div>
